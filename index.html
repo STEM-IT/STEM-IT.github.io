@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		  <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/en/3/39/Wakerlink.jpg" type="image/gif" sizes="16x16">
+		  <style>
+			div.jumbotron{
+				background: linear-gradient(to right, black , cyan);
+				color: white;
+				padding-left:2%
+			}
+			body{
+				background-color: black;
+				color: white;
+			}
+			canvas{
+				background-color: gray;
+				border-style: solid;
+			}
+			a{
+				color: white;
+			}
+			</style>
+	</head>
+	<body>
+		<div class="jumbotron">
+			<h1>Better Sum</h1>
+		</div>
+		The factorial is:  <p id="answer"></p>
+		<script>
+			var initial = parseInt(prompt("First digit"));
+			var fact = 1;
+			
+			for(var i=initial; i>=1;i--){
+				fact*=i;
+			}
+			
+			document.getElementById("answer").innerHTML = fact;
+
+		</script>
+	</body>
+</html>
